@@ -81,7 +81,7 @@ const [imageUrl, setImageUrl] = useState("")
                 }}
               />
               {previewImage ? (
-                <div className="absolute top-2 left-[10vw] bg-white flex-col w-1/2 flex   rounded-md p-4 ">
+                <div className="fixed top-[15vw]   bg-white flex-col w-1/2 object-cover flex   rounded-md p-4 ">
                   <div className="flex justify-end">
                     <h3
                       className="cursor-pointer w-fit text-end text-red-700  text-2xl"
@@ -91,21 +91,23 @@ const [imageUrl, setImageUrl] = useState("")
                       X
                     </h3>
                   </div>
-                  <img src={imageUrl} alt="" />
+                  <img className='h-[21vh]' src={imageUrl} alt="" />
                   <div className="flex bg-transparent mt-5  justify-between">
                     <img
+                    width={50}
                       onClick={() => setPreviewImage(false)}
-                      className="w-[15%] cursor-pointer"
+                      className=" cursor-pointer"
                       src="https://cdn-icons-png.flaticon.com/512/5690/5690471.png"
                       alt=""
                     />
                     <a
-                      className="flex previewdImg  justify-end"
+                      className="flex previewdImg  w-1/2 justify-end"
                       href={imageUrl}
                       download={"image"}
                     >
                       <img
-                        className="w-[15%] cursor-pointer"
+                        width={50}
+                        className=" cursor-pointer"
                         src="https://cdn-icons-png.flaticon.com/512/1091/1091669.png"
                         alt=""
                       />

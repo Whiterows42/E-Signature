@@ -51,6 +51,11 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
 .main {
   border-radius: 29px;
   background: #e0e0e0;
