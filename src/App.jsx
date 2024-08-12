@@ -42,8 +42,8 @@ const [imageUrl, setImageUrl] = useState("")
      
   return (
     <>
-      <div className=" h-[100vh] w-full flex items-center">
-        <div className="main flex justify-center  py-[10vw] gap-3">
+      <div className=" h-full w-full flex items-center">
+        <div className="main flex justify-center px-[2vw]  py-[5vw] gap-3">
           <div className="first  w-[40%] bg-purple-700 p-4 rounded-md">
             <h1 className="text-5xl tracking-widest font-bold font-serif text-white ">
               Singnature Creator
@@ -56,9 +56,7 @@ const [imageUrl, setImageUrl] = useState("")
             </div>
 
             <div>
-              <div className="singimage mt-2 rounded-lg w-full h-[20vw]">
-
-              </div>
+              <div className="singimage mt-2 rounded-lg w-full h-[20vw]"></div>
             </div>
             {/* <div className="colorPickers mt-4 flex justify-between">
               <input className="rounded-full" type="color" name="" id="" />
@@ -69,13 +67,13 @@ const [imageUrl, setImageUrl] = useState("")
           </div>
 
           <div className="second flex flex-col">
-            <div className="singnaturepad relative overflow-hidden cursor-crosshair border-2 border-purple-600 rounded-lg">
+            <div className="singnaturepad relative w-[100%]  cursor-crosshair border-2 border-purple-600 rounded-lg">
               <ReactSignatureCanvas
                 ref={canvaRef}
                 penColor={penColor}
                 canvasProps={{
-                  width: 605,
-                  height: 300,
+                  // width: 500,
+                  // height: 300,
 
                   className: "sigCanvas",
                 }}
@@ -91,10 +89,10 @@ const [imageUrl, setImageUrl] = useState("")
                       X
                     </h3>
                   </div>
-                  <img className='h-[21vh]' src={imageUrl} alt="" />
+                  <img className="h-[21vh]" src={imageUrl} alt="" />
                   <div className="flex bg-transparent mt-5  justify-between">
                     <img
-                    width={50}
+                      width={50}
                       onClick={() => setPreviewImage(false)}
                       className=" cursor-pointer"
                       src="https://cdn-icons-png.flaticon.com/512/5690/5690471.png"
@@ -117,29 +115,29 @@ const [imageUrl, setImageUrl] = useState("")
               ) : null}
             </div>
 
-            <div className="tools flex gap-5 mt-9">
-              <div className="singnatureOption p-4  rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
-                <h1 className="text-purple-600 font-bold text-xl">
+            <div className="tools h-full row flex px-2 justify-between mt-9">
+              <div className="singnatureOption col-3   p-2  rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
+                <h1 className="text-purple-600  font-bold text-[2vw]">
                   Signature Options
                 </h1>
                 <button
                   onClick={clearSingnature}
-                  className="bg-purple-700 p-3 rounded-md text-white font-bold"
+                  className="bg-purple-700 text-[1vw] h-full p-3 rounded-md text-white font-bold"
                 >
                   Clear Singnature
                 </button>
                 <button
                   onClick={downloadSingnature}
-                  className="bg-purple-700 p-3 rounded-md text-white font-bold"
+                  className="bg-purple-700 text-[1vw] h-fit p-3 rounded-md text-white font-bold"
                 >
                   Preview Singnature
                 </button>
               </div>
-              <div className="singnatureOption p-4 rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
-                <h1 className="text-purple-600 font-bold text-xl">
+              <div className="singnatureOption col-3  p-2 rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
+                <h1 className="text-purple-600 font-bold text-[2vw]">
                   Pen Setting
                 </h1>
-                <div className="inputs">
+                <div className="inputs text-[1.5vw]">
                   <div className="mt-2 flex flex-col ">
                     <label htmlFor="">Pen Size:</label>
                     <input
@@ -163,13 +161,14 @@ const [imageUrl, setImageUrl] = useState("")
                   </div>
                 </div>
               </div>
-              <div className="singnatureOption p-4 rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
-                <h1 className="text-purple-600 font-bold text-xl">
+              <div className="singnatureOption col-3 p-2 rounded-lg flex flex-col gap-4 bg-[#F0F0F0]">
+                <h1 className="text-purple-600 font-bold text-[2vw]">
                   Background Settings
                 </h1>
-                <div className="flex flex-col">
+                <div className="flex flex-col text-[1.5vw]">
                   <label htmlFor="">BackGround Color:</label>
                   <input
+                  className=''
                     value={singPadBgColor}
                     onChange={handleSingnaturePadhBgChange}
                     type="color"
