@@ -137,7 +137,7 @@ const [imageUrl, setImageUrl] = useState("")
                 <h1 className="text-purple-600 font-bold text-[2vw]">
                   Pen Setting
                 </h1>
-                <div className="inputs text-[1.5vw]">
+                <div className="inputs text-[1.6vw]">
                   <div className="mt-2 flex flex-col ">
                     <label htmlFor="">Pen Size:</label>
                     <input
