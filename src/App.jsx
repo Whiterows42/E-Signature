@@ -94,7 +94,7 @@ console.log(canvaRef.current);
                   }}
                 />
                 {previewImage ? (
-                  <div className="fixed top-[15vw]   bg-white flex-col w-1/2 object-cover flex   rounded-md p-4 ">
+                  <div className="fixed top-[15vw] md:top-[5vw] shadow-xl  bg-white flex-col w-1/2 object-cover flex   rounded-md p-2 ">
                     <div className="flex justify-end">
                       <h3
                         className="cursor-pointer w-fit text-end text-red-700  text-2xl"
@@ -116,7 +116,7 @@ console.log(canvaRef.current);
                       <a
                         className="flex previewdImg img-fluid  w-1/2 justify-end"
                         href={imageUrl}
-                        download={"image"}
+                        download={"Singnature"}
                       >
                         <img
                           // width={50}
