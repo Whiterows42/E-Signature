@@ -141,7 +141,7 @@ console.log(canvaRef.current);
                   >
                     Clear Singnature
                     <svg
-                      className="object-contain w-[17%] h-full"
+                      className="object-cover w-[17%] h-full"
                       fill="#f2f2f2"
                       viewBox="-266.24 -266.24 1556.48 1556.48"
                       t="1569683368540"
