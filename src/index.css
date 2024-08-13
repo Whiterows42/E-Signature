@@ -87,6 +87,7 @@ body {
 canvas{
   width: 100%;
   height: 20vw;
+  border-radius: 0.5rem;
 }
 .singimage{
   background-image: url("https://img.freepik.com/free-vector/digital-agreement-signing-online-document-contract-signing-computerized-business-deal-businessman-partners-using-electronic-signature-vector-isolated-concept-metaphor-illustration_335657-2770.jpg?t=st=1723437767~exp=1723438367~hmac=459fb2ce05092da3112624fe935863ca72e6c7d7ac8c96e51c0ce8a6a48ebee0");
