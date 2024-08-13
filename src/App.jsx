@@ -9,7 +9,6 @@ function App() {
   const canvaRef = useRef();
   const [isloading, setIsloading] = useState(true)
   const [previewImage, setPreviewImage] = useState(false);
-  console.log(canvaRef.current);
   const [penColor, setPenColor] = useState("black");
   const [penStroke, setPenStroke] = useState(2.4);
   const [singPadBgColor, setSetsingPadBgColor] = useState("#E0E0E0");
@@ -42,11 +41,13 @@ function App() {
   
 
     setSetsingPadBgColor(e.target.value);
-    canvaRef.current._sigPad.backgroundColor = singPadBgColor;
+    // canvaRef.current._sigPad.backgroundColor = singPadBgColor;
+    clearSingnature();
   };
   // useEffect(() => {
   //   console.log(canvaRef.current.style);
   // }, []);
+console.log(canvaRef.current);
 
   return (
     <>
@@ -84,6 +85,7 @@ function App() {
                 <ReactSignatureCanvas
                   ref={canvaRef}
                   penColor={penColor}
+                  backgroundColor={singPadBgColor}
                   canvasProps={{
                     // width: 500,
                     // height: 300,
