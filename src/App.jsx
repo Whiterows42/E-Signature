@@ -141,35 +141,28 @@ console.log(canvaRef.current);
                   >
                     Clear Singnature
                     <svg
-                      className="object-cover w-[17%] h-full"
-                      fill="#f2f2f2"
-                      viewBox="-266.24 -266.24 1556.48 1556.48"
-                      t="1569683368540"
-                      class="icon"
+                    className="object-cover w-[15%] h-fit"
+                      fill="#ffffff"
+                      height="200px"
                       version="1.1"
+                      id="Capa_1"
                       xmlns="http://www.w3.org/2000/svg"
-                      p-id="9723"
                       xmlns:xlink="http://www.w3.org/1999/xlink"
-                      stroke="#f2f2f2"
-                      transform="rotate(0)"
-                      stroke-width="0.01024"
+                      viewBox="0 0 612.002 612.002"
+                      xml:space="preserve"
                     >
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        stroke="#CCCCCC"
-                        stroke-width="2.048"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
-                        <defs>
-                          <style type="text/css"></style>
-                        </defs>
-                        <path
-                          d="M899.1 869.6l-53-305.6H864c14.4 0 26-11.6 26-26V346c0-14.4-11.6-26-26-26H618V138c0-14.4-11.6-26-26-26H432c-14.4 0-26 11.6-26 26v182H160c-14.4 0-26 11.6-26 26v192c0 14.4 11.6 26 26 26h17.9l-53 305.6c-0.3 1.5-0.4 3-0.4 4.4 0 14.4 11.6 26 26 26h723c1.5 0 3-0.1 4.4-0.4 14.2-2.4 23.7-15.9 21.2-30zM204 390h272V182h72v208h272v104H204V390z m468 440V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H416V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H202.8l45.1-260H776l45.1 260H672z"
-                          p-id="9724"
-                        ></path>
+                        {" "}
+                        <g>
+                          {" "}
+                          <path d="M594.464,534.414H344.219L606.866,271.77c6.848-6.851,6.848-17.953,0-24.8L407.547,47.65 c-3.291-3.288-7.749-5.135-12.401-5.135c-4.65,0-9.11,1.847-12.398,5.135L5.138,425.262c-6.851,6.848-6.851,17.95,0,24.8 l114.29,114.287c3.288,3.291,7.749,5.138,12.398,5.138h462.638c9.684,0,17.536-7.852,17.536-17.536 C612,542.265,604.148,534.414,594.464,534.414z M395.145,84.851L569.664,259.37L363.27,465.763L188.753,291.245L395.145,84.851z M294.618,534.414H139.09L42.336,437.66l121.617-121.617l174.519,174.519L294.618,534.414z"></path>{" "}
+                        </g>{" "}
                       </g>
                     </svg>
                   </button>
@@ -180,7 +173,7 @@ console.log(canvaRef.current);
                     Preview Singnature
                     <svg
                       fill="#ffffff"
-                      className="object-contain w-[17%] h-full"
+                      className="object-cover w-[17%] h-fit"
                       version="1.1"
                       baseProfile="tiny"
                       id="Layer_1"
