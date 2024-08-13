@@ -137,25 +137,25 @@ console.log(canvaRef.current);
                   </h1>
                   <button
                     onClick={clearSingnature}
-                    className="bg-purple-700 text-[1vw] h-fit flex justify-between p-2 rounded-md text-white font-bold"
+                    className="bg-purple-700 text-[1vw] h-fit flex items-center justify-between p-2 rounded-md text-white font-bold"
                   >
                     Clear Singnature
                     <svg
-                    className="object-cover w-[15%] h-fit"
+                      className="object-cover w-[15%] h-fit"
                       fill="#ffffff"
                       height="200px"
                       version="1.1"
                       id="Capa_1"
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       viewBox="0 0 612.002 612.002"
-                      xml:space="preserve"
+                      xmlSpace="preserve"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
@@ -168,7 +168,7 @@ console.log(canvaRef.current);
                   </button>
                   <button
                     onClick={downloadSingnature}
-                    className="bg-purple-700 text-[1vw] h-fit flex justify-between  p-2 rounded-md text-white font-bold"
+                    className="bg-purple-700 text-[1vw] h-fit flex justify-between items-center  p-2 rounded-md text-white font-bold"
                   >
                     Preview Singnature
                     <svg
@@ -181,19 +181,19 @@ console.log(canvaRef.current);
                       xmlns:i="&amp;ns_ai;"
                       xmlns:graph="&amp;ns_graphs;"
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                       width="191px"
                       height="191px"
                       viewBox="-4.2 -4.2 50.40 50.40"
-                      xml:space="preserve"
+                      xmlSpace="preserve"
                       stroke="#ffffff"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
@@ -206,7 +206,7 @@ console.log(canvaRef.current);
                   <h1 className="text-purple-600 font-bold text-[2vw]">
                     Pen Setting
                   </h1>
-                  <div className="inputs text-[1.6vw]">
+                  <div className="inputs text-[1.6vw] w-full">
                     <div className="mt-2 flex flex-col ">
                       <label htmlFor="">Pen Size:</label>
                       <input
@@ -215,14 +215,15 @@ console.log(canvaRef.current);
                         maxLength={10}
                         value={penStroke}
                         onChange={handlePenStrokeChange}
-                        className="rounded-sm"
+                        className="rounded-sm "
                         type="number"
                       />
                     </div>
-                    <div className="mt-1 flex flex-col ">
+                    <div className="mt-1 flex w-full flex-col ">
                       <label htmlFor="">Pen Color :</label>
                       <input
-                        className="rounded-sm"
+                        // style={{width:"5vw" }}
+                        className="rounded-sm w-[5vw] h-[3vw]"
                         value={penColor}
                         onChange={(e) => setPenColor(e.target.value)}
                         type="color"
@@ -237,7 +238,7 @@ console.log(canvaRef.current);
                   <div className="flex flex-col text-[1.5vw]">
                     <label htmlFor="">BackGround Color:</label>
                     <input
-                      className=""
+                      className="w-[5vw] h-[3vw]"
                       value={singPadBgColor}
                       onChange={handleSingnaturePadhBgChange}
                       type="color"
